@@ -1,13 +1,6 @@
 function encriptar() {
     const textoOriginal = document.getElementById("mensaje").value;
 
-    // Validar que solo se ingresen letras minúsculas
-    const expresion = /^[a-z]+$/;
-    if (!expresion.test(textoOriginal)) {
-      alert("¡Ingrese solo letras minúsculas!");
-      return;
-    }
-
     let textoEncriptado = "";
     for (let i = 0; i < textoOriginal.length; i++) {
       let char = textoOriginal[i];
